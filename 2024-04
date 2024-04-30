@@ -1,1 +1,8 @@
-
+1.
+```c++
+~singleton() noexcept(noexcept_quit){
+  char dummy{}; ((singleton::get<_Plugs, tool::phase_e::quit>(), dummy) = ...);
+};
+```
+https://mp.weixin.qq.com/s/8mXh761MtO4UWj5dfxqELQ
+针对可变参数，可以反向进行操作，这里对_Plugs中参数包中逆序执行get函数
